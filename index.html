@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Convert query string to JSON</title>
+	<style type="text/css">
+		input{
+		    height: 40px;
+		    font-size: 18px;
+		    border-radius: 5px;
+		    border-color: #757575;
+		}
+
+		code{
+			padding: 7px;
+		    margin: 7px;
+		    display: block;
+		    font-size: 15px;
+			line-height: 23px;
+			font-style: oblique;
+		}
+	</style>
+</head>
+<body>
+	<code id="display">your fractions will display here</code>
+	<input type="" id="input">
+
+	<script type="text/javascript">
+		document.getElementById('input').addEventListener('input', ()=>{
+			document.getElementById('display').innerHTML = 
+			decimalToFraction(document.getElementById('input').value);
+		})
+	</script>
+	<script type="text/javascript" src="decimalToFraction.js"></script>
+</body>
+</html>
